@@ -1,49 +1,59 @@
 {
   "results": [
-  		{
-  			"id":"1",
-  			"title":"Bear",
-  			"alphebetical": "B",
-    		"content":"Bear",
-    		"cat_id":"1",
-    		"color": "blue",
-    		"thumb": "img/animal/thumb-bear.png"
-    	},
-    	{
-  			"id":"2",
-  			"title":"Cat",
-  			"alphebetical": "C",
-    		"content":"Cat",
-    		"cat_id":"1",
-    		"color": "red",
-    		"thumb": "img/animal/thumb-cat.png"
-    	},
-    	{
-  			"id":"3",
-  			"title":"Elephant",
-  			"alphebetical": "E",
-    		"content":"Elephant",
-    		"cat_id":"1",
-    		"color": "yellow",
-    		"thumb": "img/animal/thumb-elephant.png"
-    	},
-    	{
-  			"id":"4",
-  			"title":"Pig",
-  			"alphebetical": "P",
-    		"content":"Pig",
-    		"cat_id":"1",
-    		"color": "green",
-    		"thumb": "img/animal/thumb-pig.png"
-    	},
-    	{
-  			"id":"5",
-  			"title":"Roaster",
-  			"alphebetical": "R",
-    		"content":"Roaster",
-    		"cat_id":"1",
-    		"color": "orange",
-    		"thumb": "img/animal/thumb-roaster.png"
-    	}
-    ] 
+		{
+			"id":"1",
+			"title":"Bear",
+			"alphebetical": "B",
+  		"content":"Bear",
+  		"cat_id":"1",
+  		"color": "blue",
+  		"thumb": "img/animal/thumb-bear.png",
+      "large": "img/animal/large-bear.png",
+      "full": "img/animal/icon-bear.png"
+  	},
+  	{
+			"id":"2",
+			"title":"Cat",
+			"alphebetical": "C",
+  		"content":"Cat",
+  		"cat_id":"1",
+  		"color": "red",
+  		"thumb": "img/animal/thumb-cat.png",
+      "large": "img/animal/large-cat.png",
+      "full": "img/animal/icon-bear.png"
+  	},
+  	{
+			"id":"3",
+			"title":"Elephant",
+			"alphebetical": "E",
+  		"content":"Elephant",
+  		"cat_id":"1",
+  		"color": "yellow",
+  		"thumb": "img/animal/thumb-elephant.png",
+      "large": "img/animal/large-elephant.png",
+      "full": "img/animal/icon-bear.png"
+  	},
+  	{
+			"id":"4",
+			"title":"Pig",
+			"alphebetical": "P",
+  		"content":"Pig",
+  		"cat_id":"1",
+  		"color": "green",
+  		"thumb": "img/animal/thumb-pig.png",
+      "large": "img/animal/large-pig.png",
+      "full": "img/animal/icon-bear.png"
+  	},
+  	{
+			"id":"5",
+			"title":"Roaster",
+			"alphebetical": "R",
+  		"content":"Roaster",
+  		"cat_id":"1",
+  		"color": "orange",
+  		"thumb": "img/animal/thumb-roaster.png",
+      "large": "img/animal/large-roaster.png",
+      "full": "img/animal/icon-bear.png"
+  	}
+  ] 
 }

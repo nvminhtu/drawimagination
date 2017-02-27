@@ -126,6 +126,8 @@ app.controller("DetailCtrl",function($scope,$stateParams, jokesService, jokesCat
     });
   });
 
+  $scope.goCats = false;
+
 
 });
 

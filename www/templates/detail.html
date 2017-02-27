@@ -6,22 +6,23 @@
   </ion-header-bar>
   <ion-content class="has-footer">
     <div id="detail" class="list card">
-      <div class="item item-avatar item-head">
-        <img src="img/funny-detail-smiley.png" alt="" />
-	      <h2 class="detail-title">{{ joke.title }}</h2>
-  	  </div>
-	  	
-	  	<div class="item item-body">
-		    <p ng-bind-html="content2">
-		     {{ joke.content }}
-		    </p>
-		  </div>
+      <div class="item item-body">
+        <div ng-hide="goCats">
+          <img ng-src="{{joke.large}}" class="img-responsive img-thumbnail">
+        </div>
+        <div ng-show="goCats">
+          <p>{{joke.title}}</p>
+          <img src="{{ joke.full }}">
+        </div>
+       
+      </div>
 		</div>
   </ion-content>
 
   <div id="footer" class="bar bar-footer">
     <div class="pagination">  
-      <a class="button btn-left icon-left ion-chevron-left button-calm" ui-sref='detail({index: prevItem })'>Previous</a>
+     <a class="button btn-left icon-left ion-chevron-left button-calm" ng-click="goCats = !goCats">View {{joke.title}}</a>
+     <!--  <a class="button btn-left icon-left ion-chevron-left button-calm" ui-sref='detail({index: prevItem })'>Previous</a> -->
       <a class="button btn-right icon-right ion-chevron-right button-calm" ui-sref='detail({index: nextItem })'>Next</a>
     </div>
   </div>
