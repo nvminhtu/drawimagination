@@ -1,0 +1,193 @@
+/*---------------------------------------
+  01- Override
+----------------------------------------*/
+a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button.icon-right:before {
+	margin-top: 0;
+}
+.bar a.button {
+	line-height: 45px;
+}
+.bar a.button.icon-left:before,
+.bar a.button.icon-right:before {
+	line-height: 45px;
+}
+
+/*---------------------------------------
+  02- Mixin & Variables
+----------------------------------------*/
+
+/*  Global variables
+----------------------------------------*/
+$font-stack: Helvetica, sans-serif;
+$bar-color: #09373F;
+$bar-height: 60px;
+
+$base-color: #5dc5be;
+$item-text-color: #09373F;
+$item-base-color: #43a3aa;
+$item-border-color: #0F7983;
+$item-detail-color: #0D1516;
+$item-title-color: #c3cc30;
+$item-head-fz: 132%;
+$item-base-fz: 108%;
+$item-lh: 1.5;
+$item-text-lh: 1.6;
+
+/*  Global mixin
+----------------------------------------*/
+@mixin heading-font-regular {
+	font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;;
+}
+@mixin center-content {
+	margin: 0 auto;
+}
+@mixin set-border-radius ($radius) {
+  border-radius: $radius;
+  webkit-border-radius: $radius;
+  moz-border-radius: $radius;
+}
+
+/*  Global font-face mixin
+----------------------------------------*/
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+    	font-family: $font-family;
+	    // src: url('#{$file-path}.eot');
+	    // src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+	    //        url('#{$file-path}.woff') format('woff'),
+	    //        url('#{$file-path}.ttf') format('truetype'),
+	    //        url('#{$file-path}.svg##{$font-family}') format('svg');
+	    src: url('#{$file-path}') format('truetype');
+	    font-weight: $font-weight;
+	    font-style: $font-style;
+  	}
+    // @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    // @font-face {
+    //   font-family: $font-family;
+    //     src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    // }
+  	//}
+}
+@include font-face(SillyFont, '../fonts/sillymonkey.ttf', 300, normal);
+@include font-face(SweetFont, '../fonts/sweet-cheeks.ttf', 300, normal);
+@include font-face(LuckiestFont, '../fonts/luckiestguy.ttf', 300, normal);
+/*---------------------------------------
+  03- Class build and customization
+----------------------------------------*/
+#header {
+	background: $bar-color;
+	h1 {
+		font-size: 134%;
+		font-family: SweetFont;
+	}
+	&.bar {
+		height: $bar-height;
+		.title {
+			height: $bar-height;
+			line-height: $bar-height;
+			right: 0!important;
+			left: 0!important;
+		}
+	}
+	.others {
+		position: absolute;
+    	top: 10px;
+    	right: 5px;
+    	bottom: 5px;
+	}
+}
+#footer {
+	background: $bar-color;
+}
+.bar-footer {
+	height: 60px
+}
+.has-header {
+	top: $bar-height;
+	padding-bottom: 20px;
+}
+.has-footer {
+	bottom: $bar-height;
+}
+
+.view-container,
+.pane,
+.scroll-content {
+	background: $base-color;
+}
+
+/*  Card Item
+----------------------------------------*/
+.card {
+	.item-body p {
+		margin-top: 0;
+	}
+	.item {
+		background: $item-base-color;
+		color: $item-text-color;
+		h2 {
+			text-transform: capitalize;
+			color: $item-text-color;
+			font-family: LuckiestFont;
+		}
+		p {
+			color: $item-detail-color;
+			font-size: $item-base-fz;
+			line-height: $item-text-lh;
+		}
+		.detail-title {
+			font-size: $item-head-fz;
+			line-height: $item-lh;
+			color: $item-title-color;
+		}
+	}
+}
+.joke-cat {
+	.item-avatar {
+		min-height: 55px;
+		> img:first-child {
+			top: 8px;
+		}
+	}
+	
+}
+/*  Card Item - Detail
+----------------------------------------*/
+#detail {
+	&.card {
+		.item {
+			background: #43a3aa;
+			&.item-head {
+				border-width: 0px;
+				margin: 0;
+			}
+			&.item-body {
+				border-width: 0px;
+				margin: 0;
+			}
+		}
+		.item-head {
+			background: $bar-color;
+		}
+	}
+}
+/*  Pagination
+----------------------------------------*/
+.pagination {
+	width: 100%;
+	.button {
+		min-width: 100px;
+	}
+	.btn-left {
+		float: left;
+	}
+	.btn-right {
+		float: right;
+	}
+}
+// button-light
+.button.button-calm {
+    border-color: transparent;
+    background-color: #0F7882;
+    color: #fff; 
+}

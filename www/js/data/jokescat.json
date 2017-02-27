@@ -1,0 +1,29 @@
+{
+   "results":[
+       {
+          "id":"1",
+          "title":"Animal",
+          "thumb":"img/cat/animal-jokes.png"
+       },
+       {
+          "id":"2",
+          "title":"Vehicles",
+          "thumb":"img/cat/bar-jokes.jpg"
+       },
+       {
+          "id":"3",
+          "title":"Jobs",
+          "thumb":"img/cat/blonde-jokes.jpg"
+       },
+       {
+          "id":"4",
+          "title":"House",
+          "thumb":"img/cat/military-jokes.jpg"
+       },
+       {
+          "id":"5",
+          "title":"Shape",
+          "thumb":"img/cat/dirty-jokes.jpg"
+       }
+    ]
+}

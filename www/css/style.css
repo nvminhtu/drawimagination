@@ -1,0 +1,185 @@
+/*---------------------------------------
+  01- Override
+----------------------------------------*/
+a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button.icon-right:before {
+  margin-top: 0; }
+
+.bar a.button {
+  line-height: 45px; }
+
+.bar a.button.icon-left:before,
+.bar a.button.icon-right:before {
+  line-height: 45px; }
+
+/*---------------------------------------
+  02- Mixin & Variables
+----------------------------------------*/
+/*  Global variables
+----------------------------------------*/
+/*  Global mixin
+----------------------------------------*/
+/*  Global font-face mixin
+----------------------------------------*/
+@font-face {
+  font-family: SillyFont;
+  src: url("../fonts/sillymonkey.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: SweetFont;
+  src: url("../fonts/sweet-cheeks.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: LuckiestFont;
+  src: url("../fonts/luckiestguy.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+/*---------------------------------------
+  03- Class build and customization
+----------------------------------------*/
+#header {
+  background: #09373F; }
+  #header h1 {
+    font-size: 134%;
+    font-family: SweetFont; }
+  #header.bar {
+    height: 60px; }
+    #header.bar .title {
+      height: 60px;
+      line-height: 60px;
+      right: 0 !important;
+      left: 0 !important; }
+  #header .others {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    bottom: 5px; }
+
+#footer {
+  background: #09373F; }
+
+.bar-footer {
+  height: 60px; }
+
+.has-header {
+  top: 60px;
+  padding-bottom: 20px; }
+
+.has-footer {
+  bottom: 60px; }
+
+.view-container,
+.pane,
+.scroll-content {
+  background: #e1ede9; }
+
+/*  Card Item
+----------------------------------------*/
+.card .item-body p {
+  margin-top: 0; }
+
+.card .item {
+  background: #f3645c;
+  color: #09373F; }
+  .card .item h2 {
+    text-transform: capitalize;
+    color: #09373F;
+    font-family: LuckiestFont; 
+    font-size: 32px;
+  }
+  .card .item p {
+    color: #0D1516;
+    font-size: 108%;
+    line-height: 1.6; }
+  .card .item .detail-title {
+    font-size: 132%;
+    line-height: 1.5;
+    color: #c3cc30; }
+
+.joke-cat .item-avatar {
+  min-height: 55px; }
+  .joke-cat .item-avatar > img:first-child {
+    top: 8px; }
+
+/*  Card Item - Detail
+----------------------------------------*/
+#detail.card .item {
+  background: #43a3aa; }
+  #detail.card .item.item-head {
+    border-width: 0px;
+    margin: 0; }
+  #detail.card .item.item-body {
+    border-width: 0px;
+    margin: 0; }
+
+#detail.card .item-head {
+  background: #09373F; }
+
+/*  Pagination
+----------------------------------------*/
+.pagination {
+  width: 100%; }
+  .pagination .button {
+    min-width: 100px; }
+  .pagination .btn-left {
+    float: left; }
+  .pagination .btn-right {
+    float: right; }
+
+.button.button-calm {
+  border-color: transparent;
+  background-color: #0F7882;
+  color: #fff; }
+
+.item-avatar img.chapter {
+    border-radius: 0%;
+}
+.cat-list li {
+  width: 50%;
+  float: left;
+}
+.card, .list-inset {
+  margin: 0 auto;
+}
+.cat-list li .card img {
+  width: 50%;
+}
+.cat-list li .card {
+  background: #f4635e;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+}
+.cat-list li h2 {
+  color: #ffffff;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  font-size: 20vw;
+}
+.cat-list li .card.blue {
+  background: #4bc5ec;
+}
+.cat-list li .card.red {
+  background: #ef6160;
+}
+.cat-list li .card.orange {
+  background: #e1ab24;
+}
+.cat-list li .card.yellow {
+  background: #fef200;
+}
+.cat-list li .card.darkgreen {
+  background: #3f5666;
+}
+.cat-list li .card.white {
+  background: #eff5f5;
+}
+.cat-list li .card.green {
+  background: #9ee422;
+}

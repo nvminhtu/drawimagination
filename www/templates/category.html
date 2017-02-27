@@ -1,0 +1,21 @@
+<ion-pane ng-controller="AppCtrl">
+  <ion-header-bar id="header" class="bar bar-assertive">
+  	<a ng-href="#/main" onclick="prepareInterstitial();" class="button icon-left ion-home"></a>
+    <h1 class="title" ng-repeat="jokecat in jokecats | filter:isCat" >
+       {{ jokecat.title }}
+     </h1>
+    <a href="#/about" class="others"><img src="img/question-funny.png" alt="" width="40" height="40" /></a>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ul class="cat-list">
+        <li class="card joke-cat" ng-repeat="joke in jokes" onclick="prepareInterstitial();"  ui-sref='detail({index: joke.id })'>
+          <div class="card {{joke.color}}">
+              <img src="{{ joke.thumb }}" alt="{{ joke.alphabetical }}" />
+              <h2 ng-bind-html="joke.alphebetical"></h2>
+            </div>
+        </li>
+      </ul>
+    </ion-list>
+  </ion-content>
+</ion-pane>
