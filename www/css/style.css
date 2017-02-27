@@ -59,8 +59,7 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
     right: 5px;
     bottom: 5px; }
 
-#footer {
-  background: #09373F; }
+#footer { }
 
 .bar-footer {
   height: 60px; }
